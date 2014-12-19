@@ -20,7 +20,7 @@
     "spec",
     "resources",
     "Gruntfile.coffee",
-    "contributing.md",
+    "CONTRIBUTING.md",
     "package.json"
   ],
   "dependencies": {},

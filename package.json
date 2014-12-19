@@ -1,5 +1,5 @@
 {
-  "name": "obj",
+  "name": "bigfoot-obj",
   "version": "0.0.1",
   "main": "dist/obj.js",
   "scripts": {
@@ -21,9 +21,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lemonmade/bigfoot-obj.git"
+    "url": "https://github.com/bigfoot-js/obj.git"
   },
   "bugs": {
-    "url": "https://github.com/lemonmade/bigfoot-obj/issues"
+    "url": "https://github.com/bigfoot-js/obj/issues"
   }
 }
