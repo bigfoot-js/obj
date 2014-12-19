@@ -8,16 +8,13 @@ module.exports = (grunt) ->
         dest: "dist/obj.min.js"
 
     coffee:
+      build:
+        src: "src/obj.coffee"
+        dest: "dist/obj.js"
+
       specs:
         src: "spec/obj_spec.coffee"
         dest: "spec/js/obj_spec.js"
-
-    browserify:
-      build:
-        src: "src/**/*.coffee"
-        dest: "dist/obj.js"
-        options:
-          transform: ["coffeeify"]
 
     jasmine:
       build:
@@ -72,14 +69,12 @@ module.exports = (grunt) ->
 
   # 3. PERFORM
   grunt.registerTask "default", [
-    "browserify"
     "coffee"
     "uglify"
     "compare_size"
   ]
 
   grunt.registerTask "scripts", [
-    "browserify"
     "coffee"
     "uglify"
     "jasmine"
@@ -87,7 +82,6 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask "spec", [
-    "browserify"
     "coffee"
     "jasmine"
   ]
